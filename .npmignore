@@ -1,0 +1,11 @@
+# Don't include anything
+**/*
+# Besides:
+# Dist and all child folders
+!dist/**/*
+# The license
+!LICENSE
+# The package.json
+!package.json
+# The readme
+!README.md

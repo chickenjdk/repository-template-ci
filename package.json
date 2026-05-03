@@ -1,0 +1,40 @@
+{
+  "name": "repository-template",
+  "version": "1.0.0",
+  "description": "The repository template for all (new) packages created by this organization",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/esm/index.mjs",
+      "require": "./dist/cjs/index.cjs"
+    },
+    "./dist/*.js": {
+      "import": "./dist/esm/*.mjs",
+      "require": "./dist/cjs/*.cjs"
+    }
+  },
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "tsc; node ./build/index.mjs",
+    "docs": "typedoc --options typedoc.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chickenjdk/repository-template.git"
+  },
+  "keywords": [],
+  "author": "_YOU_",
+  "license": "MIT",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/chickenjdk/repository-template/issues"
+  },
+  "homepage": "https://github.com/chickenjdk/repository-template#readme",
+  "devDependencies": {
+    "@chickenjdk/build": "^1.0.3",
+    "@types/node": "^25.6.0",
+    "rimraf": "^6.1.3",
+    "typedoc": "^0.28.19",
+    "typescript": "^6.0.3"
+  }
+}
