@@ -25,7 +25,7 @@
   "keywords": [],
   "author": "_YOU_",
   "license": "MIT",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/chickenjdk/repository-template/issues"
   },
